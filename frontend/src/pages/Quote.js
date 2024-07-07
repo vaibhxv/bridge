@@ -20,7 +20,7 @@ const Quote = () => {
     useEffect(() => {
         const fetchQuote = async () => {
             try {
-                const response = await axios.post('http://localhost:8080/quotes', {
+                const response = await axios.post('https://bridge-5kh7.onrender.com/quotes', {
                     headers: {},
                     token: token,
                     chain: chain,
