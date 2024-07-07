@@ -23,7 +23,7 @@ const Home = () => {
     useEffect(() => {
         const fetchChains = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/tokens');
+                const response = await axios.get('https://bridge-5kh7.onrender.com/tokens');
                 setChains(response.data.supportedChains);
                 setdstChains(response.data.supportedChains);
                 fetchTokens(tokenId);
