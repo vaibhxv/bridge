@@ -16,7 +16,7 @@ const Params = () => {
     useEffect(() => {
         const fetchParams = async () => {
             try {
-                const response = await axios.post('http://localhost:8080/params', {
+                const response = await axios.post('https://bridge-5kh7.onrender.com/params', {
                     headers: {},
                     token: token,
                     chain: chain,
